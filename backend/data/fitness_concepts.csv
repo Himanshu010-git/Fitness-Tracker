@@ -1,0 +1,151 @@
+step_cat,duration_cat,frequency_cat,sleep_cat,hydration_cat,fatigue_level,target_goal_met,target_recommendation
+Moderate,Short,Medium,Poor,Optimal,Low,No,Rest & Recovery
+High,Short,Medium,Optimal,Optimal,Moderate,No,Light Mobility
+High,Short,Medium,Optimal,Low,High,No,Rest & Recovery
+Moderate,Short,Low,Poor,Adequate,Low,No,Rest & Recovery
+Low,Moderate,High,Optimal,Optimal,High,Yes,Rest & Recovery
+High,Moderate,High,Adequate,Adequate,Low,Yes,Standard Workout
+Low,Short,Medium,Optimal,Optimal,Moderate,No,Light Mobility
+Low,Short,Medium,Poor,Adequate,Low,No,Rest & Recovery
+Moderate,Long,High,Optimal,Adequate,Low,Yes,Standard Workout
+Low,Short,Low,Poor,Optimal,Moderate,No,Rest & Recovery
+Low,Moderate,Low,Adequate,Adequate,Moderate,No,Light Mobility
+Moderate,Long,Medium,Poor,Optimal,High,No,Rest & Recovery
+Moderate,Short,Medium,Adequate,Adequate,Low,No,Light Mobility
+Moderate,Short,Medium,Adequate,Adequate,Moderate,No,Light Mobility
+Low,Moderate,High,Poor,Low,High,No,Rest & Recovery
+High,Short,Low,Optimal,Adequate,High,No,Rest & Recovery
+Moderate,Long,Low,Optimal,Low,Moderate,No,Light Mobility
+High,Moderate,High,Optimal,Adequate,High,Yes,Rest & Recovery
+Low,Moderate,Medium,Poor,Adequate,High,No,Rest & Recovery
+Low,Long,High,Optimal,Optimal,High,Yes,Rest & Recovery
+High,Short,Low,Adequate,Low,Low,No,Light Mobility
+Low,Short,Low,Poor,Adequate,Low,No,Rest & Recovery
+High,Moderate,Low,Optimal,Low,High,No,Rest & Recovery
+Moderate,Moderate,High,Poor,Low,Moderate,No,Rest & Recovery
+High,Moderate,High,Adequate,Adequate,High,Yes,Rest & Recovery
+Moderate,Short,High,Optimal,Optimal,High,No,Rest & Recovery
+Moderate,Short,Medium,Poor,Low,High,No,Rest & Recovery
+High,Long,Low,Poor,Optimal,Low,No,Rest & Recovery
+Moderate,Long,Medium,Adequate,Adequate,Moderate,Yes,Light Mobility
+High,Moderate,High,Optimal,Adequate,Low,Yes,High Intensity
+Low,Moderate,Medium,Poor,Optimal,High,No,Rest & Recovery
+High,Long,Medium,Poor,Adequate,Moderate,No,Rest & Recovery
+High,Short,Low,Optimal,Adequate,Moderate,No,Light Mobility
+Moderate,Short,Medium,Adequate,Adequate,Moderate,No,Light Mobility
+Moderate,Long,High,Poor,Low,Low,No,Rest & Recovery
+Moderate,Long,Medium,Adequate,Adequate,High,Yes,Rest & Recovery
+Moderate,Long,High,Poor,Low,Moderate,No,Rest & Recovery
+Low,Moderate,High,Adequate,Optimal,Moderate,Yes,Light Mobility
+Low,Long,Low,Poor,Adequate,High,No,Rest & Recovery
+High,Moderate,Low,Optimal,Optimal,Low,No,High Intensity
+Low,Short,Low,Poor,Low,Low,No,Rest & Recovery
+Moderate,Short,Medium,Optimal,Low,Moderate,No,Light Mobility
+Moderate,Moderate,High,Adequate,Optimal,Low,Yes,Standard Workout
+High,Short,Low,Adequate,Adequate,High,No,Rest & Recovery
+Moderate,Short,Medium,Optimal,Optimal,Moderate,No,Light Mobility
+Moderate,Short,Medium,Optimal,Optimal,Low,No,Light Mobility
+Moderate,Short,Medium,Poor,Low,High,No,Rest & Recovery
+Low,Short,High,Poor,Optimal,Low,No,Rest & Recovery
+Moderate,Long,Medium,Optimal,Low,High,No,Rest & Recovery
+Low,Moderate,Low,Optimal,Low,High,No,Rest & Recovery
+Low,Short,Medium,Optimal,Adequate,High,No,Rest & Recovery
+High,Long,Medium,Adequate,Adequate,Moderate,Yes,Light Mobility
+Moderate,Moderate,Low,Adequate,Adequate,High,No,Rest & Recovery
+High,Long,Medium,Optimal,Low,Low,No,High Intensity
+High,Long,Medium,Optimal,Optimal,High,Yes,Rest & Recovery
+High,Moderate,Medium,Optimal,Low,Moderate,No,Light Mobility
+Low,Moderate,Medium,Optimal,Adequate,Moderate,Yes,Light Mobility
+Moderate,Long,High,Optimal,Adequate,Low,Yes,Standard Workout
+Low,Long,Low,Poor,Optimal,Moderate,No,Rest & Recovery
+High,Moderate,High,Poor,Optimal,Low,No,Rest & Recovery
+High,Moderate,Medium,Adequate,Adequate,Moderate,Yes,Light Mobility
+Moderate,Long,Low,Optimal,Optimal,High,No,Rest & Recovery
+Low,Moderate,High,Optimal,Low,High,No,Rest & Recovery
+High,Long,Medium,Optimal,Adequate,High,Yes,Rest & Recovery
+Moderate,Short,High,Optimal,Low,Moderate,No,Light Mobility
+Low,Moderate,Low,Optimal,Adequate,High,No,Rest & Recovery
+High,Short,High,Adequate,Optimal,Low,No,Light Mobility
+Low,Moderate,Low,Optimal,Adequate,Moderate,No,Light Mobility
+Moderate,Moderate,Medium,Optimal,Adequate,Moderate,Yes,Light Mobility
+Low,Moderate,Low,Optimal,Optimal,High,No,Rest & Recovery
+High,Short,Medium,Poor,Optimal,Low,No,Rest & Recovery
+High,Moderate,High,Adequate,Adequate,Low,Yes,Standard Workout
+Low,Short,Low,Adequate,Adequate,High,No,Rest & Recovery
+Moderate,Short,Medium,Optimal,Low,Low,No,Light Mobility
+Moderate,Moderate,High,Poor,Adequate,High,No,Rest & Recovery
+Low,Short,Medium,Adequate,Low,Low,No,Light Mobility
+High,Short,Medium,Poor,Low,High,No,Rest & Recovery
+Moderate,Long,Medium,Adequate,Adequate,Moderate,Yes,Light Mobility
+Moderate,Short,Low,Optimal,Low,High,No,Rest & Recovery
+Moderate,Short,Medium,Optimal,Low,Low,No,Light Mobility
+High,Short,High,Optimal,Low,Low,No,Light Mobility
+High,Moderate,Medium,Poor,Low,Moderate,No,Rest & Recovery
+High,Long,Medium,Poor,Low,Low,No,Rest & Recovery
+Moderate,Moderate,Medium,Optimal,Optimal,High,Yes,Rest & Recovery
+High,Moderate,Medium,Optimal,Low,Moderate,No,Light Mobility
+Moderate,Moderate,Low,Poor,Adequate,Low,No,Rest & Recovery
+Low,Short,High,Poor,Low,High,No,Rest & Recovery
+Low,Long,High,Poor,Low,Moderate,No,Rest & Recovery
+High,Long,Low,Adequate,Optimal,Moderate,No,Light Mobility
+High,Long,Low,Optimal,Low,High,No,Rest & Recovery
+Low,Long,Low,Poor,Optimal,Low,No,Rest & Recovery
+Moderate,Moderate,Medium,Poor,Optimal,Moderate,No,Rest & Recovery
+Moderate,Long,Low,Poor,Optimal,High,No,Rest & Recovery
+High,Short,Medium,Adequate,Optimal,Low,No,Light Mobility
+High,Long,Medium,Optimal,Optimal,High,Yes,Rest & Recovery
+Low,Moderate,Low,Optimal,Optimal,High,No,Rest & Recovery
+Low,Moderate,Low,Poor,Adequate,Low,No,Rest & Recovery
+High,Short,Medium,Optimal,Low,Moderate,No,Light Mobility
+High,Moderate,Medium,Poor,Low,High,No,Rest & Recovery
+Moderate,Short,High,Adequate,Adequate,Low,No,Light Mobility
+Low,Short,High,Poor,Low,High,No,Rest & Recovery
+High,Moderate,Low,Poor,Optimal,Low,No,Rest & Recovery
+High,Long,Low,Adequate,Optimal,Low,No,Standard Workout
+Moderate,Moderate,Medium,Adequate,Low,Low,No,Standard Workout
+Low,Short,Medium,Adequate,Optimal,Moderate,No,Light Mobility
+Moderate,Long,Low,Poor,Low,Low,No,Rest & Recovery
+Low,Long,High,Poor,Adequate,Moderate,No,Rest & Recovery
+Moderate,Long,Medium,Optimal,Low,Moderate,No,Light Mobility
+Moderate,Short,Low,Adequate,Adequate,Moderate,No,Light Mobility
+Moderate,Moderate,High,Adequate,Adequate,High,Yes,Rest & Recovery
+Low,Short,Low,Optimal,Optimal,Low,No,Light Mobility
+Low,Short,Medium,Optimal,Adequate,High,No,Rest & Recovery
+High,Moderate,Low,Optimal,Adequate,Moderate,No,Light Mobility
+High,Short,High,Optimal,Low,Moderate,No,Light Mobility
+Moderate,Short,Medium,Adequate,Low,Low,No,Light Mobility
+Moderate,Long,Medium,Poor,Optimal,High,No,Rest & Recovery
+High,Long,High,Optimal,Optimal,Low,Yes,High Intensity
+High,Moderate,High,Optimal,Optimal,High,Yes,Rest & Recovery
+High,Short,Medium,Optimal,Optimal,Low,No,Light Mobility
+Moderate,Moderate,High,Optimal,Optimal,Moderate,Yes,Light Mobility
+Low,Long,High,Poor,Low,High,No,Rest & Recovery
+Low,Long,Medium,Adequate,Low,Low,No,Light Mobility
+Moderate,Moderate,Low,Adequate,Adequate,Low,No,Standard Workout
+High,Short,High,Optimal,Adequate,Moderate,No,Light Mobility
+Low,Short,Medium,Adequate,Optimal,Moderate,No,Light Mobility
+Low,Moderate,Medium,Adequate,Low,Moderate,No,Light Mobility
+High,Long,Low,Poor,Adequate,Moderate,No,Rest & Recovery
+Low,Long,High,Poor,Low,High,No,Rest & Recovery
+High,Long,Medium,Optimal,Optimal,Low,Yes,High Intensity
+High,Long,Medium,Adequate,Adequate,Low,Yes,Standard Workout
+Low,Moderate,Medium,Optimal,Optimal,High,Yes,Rest & Recovery
+Moderate,Long,High,Adequate,Optimal,Moderate,Yes,Light Mobility
+Low,Short,High,Poor,Low,Moderate,No,Rest & Recovery
+Moderate,Long,Medium,Optimal,Optimal,Moderate,Yes,Light Mobility
+High,Short,Low,Poor,Adequate,Low,No,Rest & Recovery
+High,Long,High,Adequate,Low,Moderate,No,Light Mobility
+High,Short,Low,Poor,Adequate,Low,No,Rest & Recovery
+Moderate,Short,High,Adequate,Low,Moderate,No,Light Mobility
+Low,Long,High,Optimal,Low,Moderate,No,Light Mobility
+Moderate,Long,High,Optimal,Low,Moderate,No,Light Mobility
+Low,Long,High,Poor,Optimal,Moderate,No,Rest & Recovery
+High,Moderate,High,Poor,Optimal,High,No,Rest & Recovery
+Low,Long,Low,Poor,Adequate,High,No,Rest & Recovery
+High,Long,Medium,Optimal,Adequate,Moderate,Yes,Light Mobility
+High,Long,Low,Adequate,Adequate,Moderate,No,Light Mobility
+Moderate,Moderate,Low,Poor,Adequate,High,No,Rest & Recovery
+High,Long,High,Adequate,Optimal,High,Yes,Rest & Recovery
+Moderate,Long,High,Optimal,Optimal,Low,Yes,Standard Workout
+Low,Short,High,Optimal,Adequate,High,No,Rest & Recovery
+Moderate,Long,Low,Optimal,Optimal,Low,No,Standard Workout
