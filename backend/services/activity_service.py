@@ -101,7 +101,25 @@ def create_activity(
     db.add(record)
     db.commit()
     db.refresh(record)
+
+    # 3. Find-S: Check today's logged habits and attach warnings to the response
+    try:
+        habit_res = model_service.evaluate_habit_consistency(
+            duration_min=float(exercise_duration),
+            weekly_frequency=freq,
+            sleep_hours=float(sleep_duration),
+            water_liters=float(water_intake)
+        )
+        if not habit_res["is_aligned"]:
+            # Extract which specific habits failed from the message
+            record.habit_warnings = [habit_res["message"]]
+        else:
+            record.habit_warnings = []
+    except Exception:
+        record.habit_warnings = []
+
     return record
+
 
 def update_activity(
     db: Session,

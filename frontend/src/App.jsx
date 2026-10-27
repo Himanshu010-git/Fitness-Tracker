@@ -38,20 +38,31 @@ export default function App() {
   const handleGlobalActivitySubmit = async (formData) => {
     setIsSubmittingActivity(true);
     try {
-      await api.createActivity(formData);
+      const savedActivity = await api.createActivity(formData);
       setIsActivityModalOpen(false);
       setRefreshTrigger((prev) => prev + 1);
-      setGlobalNotification({
-        type: "success",
-        message: "Activity logged successfully! ML insights & progress updated."
-      });
-      setTimeout(() => setGlobalNotification(null), 4000);
+
+      // Check if Find-S detected any habit issues in the logged data
+      const warnings = savedActivity?.habit_warnings || [];
+      if (warnings.length > 0) {
+        setGlobalNotification({
+          type: "warning",
+          message: `⚠️ Habit Alert: ${warnings.join(" ")}`,
+        });
+      } else {
+        setGlobalNotification({
+          type: "success",
+          message: "Activity logged successfully! ML insights & progress updated.",
+        });
+      }
+      setTimeout(() => setGlobalNotification(null), 7000);
     } catch (err) {
       alert("Failed to log activity: " + err.message);
     } finally {
       setIsSubmittingActivity(false);
     }
   };
+
 
   return (
     <Router>
@@ -69,7 +80,11 @@ export default function App() {
 
           {/* Global Notification Banner */}
           {globalNotification && (
-            <div className="mx-4 lg:mx-8 mt-4 p-3.5 rounded-xl text-xs font-semibold flex items-center justify-between border bg-emerald-500/15 border-emerald-500/30 text-emerald-300">
+            <div className={`mx-4 lg:mx-8 mt-4 p-3.5 rounded-xl text-xs font-semibold flex items-center justify-between border ${
+              globalNotification.type === "warning"
+                ? "bg-amber-500/15 border-amber-500/30 text-amber-300"
+                : "bg-emerald-500/15 border-emerald-500/30 text-emerald-300"
+            }`}>
               <span>{globalNotification.message}</span>
               <button
                 onClick={() => setGlobalNotification(null)}
@@ -79,6 +94,7 @@ export default function App() {
               </button>
             </div>
           )}
+
 
           {/* Page Routing */}
           <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-7xl w-full mx-auto">

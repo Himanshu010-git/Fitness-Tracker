@@ -145,7 +145,21 @@ class ModelService:
             message = "Your workout duration, recovery sleep, and hydration match our optimal habit profile."
         else:
             status_text = "Habit Opportunity"
-            message = "Adjusting sleep or exercise frequency will bring your daily routine into full alignment."
+            # Build a specific message based on which attributes failed the learned hypothesis
+            learned_h = self.find_s_model.get_hypothesis()
+            issues = []
+            if learned_h.get("sleep_cat") != "?" and instance["sleep_cat"] != learned_h.get("sleep_cat"):
+                issues.append(f"sleep is {instance['sleep_cat'].lower()} (aim for at least 6 hours)")
+            if learned_h.get("hydration_cat") != "?" and instance["hydration_cat"] != learned_h.get("hydration_cat"):
+                issues.append(f"hydration is {instance['hydration_cat'].lower()} (drink at least 1.5L of water)")
+            if learned_h.get("duration_cat") != "?" and instance["duration_cat"] != learned_h.get("duration_cat"):
+                issues.append(f"workout duration is {instance['duration_cat'].lower()} (aim for 30+ minutes)")
+            if learned_h.get("frequency_cat") != "?" and instance["frequency_cat"] != learned_h.get("frequency_cat"):
+                issues.append(f"exercise frequency is {instance['frequency_cat'].lower()} (try exercising more days)")
+            if issues:
+                message = "Habit gap detected — your " + " and your ".join(issues) + "."
+            else:
+                message = "Adjusting sleep or exercise frequency will bring your daily routine into full alignment."
 
         return {
             "habit_status": status_text,

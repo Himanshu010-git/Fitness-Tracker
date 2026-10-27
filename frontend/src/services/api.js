@@ -142,7 +142,14 @@ export const api = {
       body: JSON.stringify(data),
     }),
 
+  checkHabitConsistency: (data) =>
+    request("/insights/habit-check", {
+      method: "POST",
+      body: JSON.stringify(data),
+    }),
+
   getModelsStatus: () => request("/insights/models-status"),
+
 };
 
 export default api;

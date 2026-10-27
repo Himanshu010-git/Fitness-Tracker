@@ -73,11 +73,12 @@ def generate_user_insights(db: Session) -> Dict[str, Any]:
     )
 
     # 2. Find-S Concept Learning: Habit Consistency
+    # Use latest activity's sleep & water — Find-S checks TODAY's habits, not historical averages
     find_s_res = model_service.evaluate_habit_consistency(
-        duration_min=avg_duration,
+        duration_min=float(latest.exercise_duration),
         weekly_frequency=frequency,
-        sleep_hours=avg_sleep,
-        water_liters=avg_water
+        sleep_hours=latest.sleep_duration,
+        water_liters=latest.water_intake
     )
 
     # 3. ID3 Decision Tree: Daily Readiness & Focus

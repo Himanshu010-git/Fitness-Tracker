@@ -47,6 +47,7 @@ class ActivityResponseSchema(BaseModel):
     activity_level: str
     notes: Optional[str]
     created_at: Optional[datetime]
+    habit_warnings: Optional[List[str]] = None  # Find-S habit alerts returned on log save
 
 # --- Goal Schemas ---
 
@@ -134,3 +135,9 @@ class ReadinessRecommendationRequest(BaseModel):
     duration_min: float = Field(default=30.0, ge=0.0)
     sleep_hours: float = Field(default=7.0, ge=0.0, le=24.0)
     fatigue_level: str = Field(default="Low")
+
+class HabitCheckRequest(BaseModel):
+    duration_min: float = Field(default=40.0, ge=0.0, le=720.0, description="Workout duration in minutes")
+    weekly_frequency: int = Field(default=3, ge=0, le=7, description="Exercise days per week")
+    sleep_hours: float = Field(default=7.0, ge=0.0, le=24.0, description="Sleep duration in hours")
+    water_liters: float = Field(default=2.0, ge=0.0, le=20.0, description="Water intake in liters")

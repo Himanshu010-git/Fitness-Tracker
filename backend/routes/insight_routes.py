@@ -16,8 +16,10 @@ from backend.ml_models.model_service import get_model_service
 from backend.routes.schemas import (
     CaloriePredictionRequest,
     ActivityClassificationRequest,
-    ReadinessRecommendationRequest
+    ReadinessRecommendationRequest,
+    HabitCheckRequest
 )
+
 
 router = APIRouter(prefix="/insights", tags=["AI Fitness Insights"])
 
@@ -51,6 +53,20 @@ def test_activity_classification(payload: ActivityClassificationRequest) -> Dict
             active_minutes=payload.active_minutes,
             distance_km=payload.distance_km,
             exercise_frequency=payload.exercise_frequency
+        )
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+@router.post("/habit-check")
+def test_habit_consistency(payload: HabitCheckRequest) -> Dict[str, Any]:
+    """Algorithm 3: Find-S Concept Learning sandbox for habit consistency check."""
+    model_service = get_model_service()
+    try:
+        return model_service.evaluate_habit_consistency(
+            duration_min=payload.duration_min,
+            weekly_frequency=payload.weekly_frequency,
+            sleep_hours=payload.sleep_hours,
+            water_liters=payload.water_liters
         )
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
